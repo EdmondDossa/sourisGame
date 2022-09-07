@@ -52,10 +52,11 @@ class App extends Component{
                     clearInterval(interval);
                     if(this.state.score<this.state.maxScore && this.state.level===this.state.levelTemp && this.state.time===this.state.delay){
                         this.game();
-                    }else{
+                    }else if(this.state.time!==this.state.delay || this.state.level!==this.state.levelTemp){
                         this.setState({
                             score:0
                         })
+                        clearInterval(interval);
                     }
                 }, 2000);
             },this.state.delay)
