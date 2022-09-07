@@ -153,11 +153,8 @@ class App extends Component{
                         </div>
                     </div>
                     {this.state.score>=this.state.maxScore?
-                        <section className='absolute t-6 p-6 mx-16 my-8 max-w-sm bg-white rounded-xl top-0 shadow-lg space-x-4 text-center'>
-                            <span className='block text-black font-bold py-2 px-3  m-3 max-w-auto rounded-lg'>Félicitation Vous avez gagnez!!!!!!!!!!!</span>
-                            <span className='block text-black font-bold py-2 px-3  m-3 max-w-auto rounded-lg'>Ca Vous dirait de faire une autre partie !!!!!!!!!</span>
-                            <h1 className='text-black font-bold py-2 px-3 border border-gray-400 border-2 m-3 max-w-auto rounded-lg'>Score: {this.state.score}</h1>
-                            <button onClick={()=>this.setState({
+                        window.confirm("Vous avez atteint le ScoreMax!!!\nVoulez vous continuer de jouer!!!!!!!")?
+                            this.setState({
                                 level:1,
                                 delay:2000,
                                 levelTemp:1,
@@ -166,10 +163,9 @@ class App extends Component{
                                 place:[],
                                 finish:false,
                                 maxScore:15
-                            })} className='bg-green-500 text-white font-bold py-2 px-6 rounded'>Oui</button>
-                            <button onClick={()=>this.setState({finish:true})} className='bg-red-500 text-white font-bold py-2 px-6 rounded'>Non</button>
-                        </section>
-                        :null}
+                            })
+                        :this.setState({finish:true})
+                    :null}
                 </>
             : <Goodbye/>}
             </div>
