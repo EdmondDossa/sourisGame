@@ -133,20 +133,20 @@ class App extends Component{
                         <div className='mx-20'>
                             <h2 className='block text-black font-bold py-2 px-3  m-3 max-w-auto rounded-lg'>Score: <span className='fontbold'>{this.state.score}</span></h2>
                             <div className='mx-16 my-10'>
-                                <div className='flex'>
-                                    <p onClick={e=>this.verify(1)} className='bg-white text-black fontbold w-16 h-16 justify-center align-center flex py-1 border-4 my-2 mx-1 h-14 text-center cursor-pointer' >{this.searcIndex(1)?<img src={image} alt='' className='bg-black border-16 w-10 h-10 rounded-full'/>:null}</p>
-                                    <p onClick={e=>this.verify(2)} className='bg-white text-black fontbold w-16 h-16 justify-center align-center flex py-1 border-4 my-2 mx-1 h-14 text-center cursor-pointer' >{this.searcIndex(2)?<img src={image} alt='' className='bg-black border-16 w-10 h-10 rounded-full'/>:null}</p>
-                                    <p onClick={e=>this.verify(3)} className='bg-white text-black fontbold w-16 h-16 justify-center align-center flex py-1 border-4 my-2 mx-1 h-14 text-center cursor-pointer' >{this.searcIndex(3)?<img src={image} alt='' className='bg-black border-16 w-10 h-10 rounded-full'/>:null}</p>
+                                <div className='flex blockdiv'>
+                                    <p onClick={e=>this.verify(1)} className='bg-white text-black fontbold w-16 h-16 justify-center align-center flex py-1 border-4 my-2 mx-1 h-14 text-center cursor-pointer blockdiv' >{this.searcIndex(1)?<img src={image} alt='' className='bg-black border-16 w-10 h-10 rounded-full'/>:null}</p>
+                                    <p onClick={e=>this.verify(2)} className='bg-white text-black fontbold w-16 h-16 justify-center align-center flex py-1 border-4 my-2 mx-1 h-14 text-center cursor-pointer blockdiv' >{this.searcIndex(2)?<img src={image} alt='' className='bg-black border-16 w-10 h-10 rounded-full'/>:null}</p>
+                                    <p onClick={e=>this.verify(3)} className='bg-white text-black fontbold w-16 h-16 justify-center align-center flex py-1 border-4 my-2 mx-1 h-14 text-center cursor-pointer blockdiv' >{this.searcIndex(3)?<img src={image} alt='' className='bg-black border-16 w-10 h-10 rounded-full'/>:null}</p>
                                 </div>
-                                <div className='flex'>
-                                    <p onClick={e=>this.verify(4)} className='bg-white text-black fontbold w-16 h-16 justify-center align-center flex py-1 border-4 my-2 mx-1 h-14 text-center cursor-pointer' >{this.searcIndex(4)?<img src={image} alt='' className='bg-black border-16 w-10 h-10 rounded-full'/>:null}</p>
-                                    <p onClick={e=>this.verify(5)} className='bg-white text-black fontbold w-16 h-16 justify-center align-center flex py-1 border-4 my-2 mx-1 h-14 text-center cursor-pointer' >{this.searcIndex(5)?<img src={image} alt='' className='bg-black border-16 w-10 h-10 rounded-full'/>:null}</p>
-                                    <p onClick={e=>this.verify(6)} className='bg-white text-black fontbold w-16 h-16 justify-center align-center flex py-1 border-4 my-2 mx-1 h-14 text-center cursor-pointer' >{this.searcIndex(6)?<img src={image} alt='' className='bg-black border-16 w-10 h-10 rounded-full'/>:null}</p>
+                                <div className='flex blockdiv'>
+                                    <p onClick={e=>this.verify(4)} className='bg-white text-black fontbold w-16 h-16 justify-center align-center flex py-1 border-4 my-2 mx-1 h-14 text-center cursor-pointer blockdiv' >{this.searcIndex(4)?<img src={image} alt='' className='bg-black border-16 w-10 h-10 rounded-full'/>:null}</p>
+                                    <p onClick={e=>this.verify(5)} className='bg-white text-black fontbold w-16 h-16 justify-center align-center flex py-1 border-4 my-2 mx-1 h-14 text-center cursor-pointer blockdiv' >{this.searcIndex(5)?<img src={image} alt='' className='bg-black border-16 w-10 h-10 rounded-full'/>:null}</p>
+                                    <p onClick={e=>this.verify(6)} className='bg-white text-black fontbold w-16 h-16 justify-center align-center flex py-1 border-4 my-2 mx-1 h-14 text-center cursor-pointer blockdiv' >{this.searcIndex(6)?<img src={image} alt='' className='bg-black border-16 w-10 h-10 rounded-full'/>:null}</p>
                                 </div>
-                                <div className='flex'>
-                                    <p onClick={e=>this.verify(7)} className='bg-white text-black fontbold w-16 h-16 justify-center align-center flex py-1 border-4 my-2 mx-1 h-14 text-center cursor-pointer' >{this.searcIndex(7)?<img src={image} alt='' className='bg-black border-16 w-10 h-10 rounded-full'/>:null}</p>
-                                    <p onClick={e=>this.verify(8)} className='bg-white text-black fontbold w-16 h-16 justify-center align-center flex py-1 border-4 my-2 mx-1 h-14 text-center cursor-pointer' >{this.searcIndex(8)?<img src={image} alt='' className='bg-black border-16 w-10 h-10 rounded-full'/>:null}</p>
-                                    <p onClick={e=>this.verify(9)} className='bg-white text-black fontbold w-16 h-16 justify-center align-center flex py-1 border-4 my-2 mx-1 h-14 text-center cursor-pointer' >{this.searcIndex(9)?<img src={image} alt='' className='bg-black border-16 w-10 h-10 rounded-full'/>:null}</p>
+                                <div className='flex blockdiv'>
+                                    <p onClick={e=>this.verify(7)} className='bg-white text-black fontbold w-16 h-16 justify-center align-center flex py-1 border-4 my-2 mx-1 h-14 text-center cursor-pointer blockdiv' >{this.searcIndex(7)?<img src={image} alt='' className='bg-black border-16 w-10 h-10 rounded-full'/>:null}</p>
+                                    <p onClick={e=>this.verify(8)} className='bg-white text-black fontbold w-16 h-16 justify-center align-center flex py-1 border-4 my-2 mx-1 h-14 text-center cursor-pointer blockdiv' >{this.searcIndex(8)?<img src={image} alt='' className='bg-black border-16 w-10 h-10 rounded-full'/>:null}</p>
+                                    <p onClick={e=>this.verify(9)} className='bg-white text-black fontbold w-16 h-16 justify-center align-center flex py-1 border-4 my-2 mx-1 h-14 text-center cursor-pointer blockdiv' >{this.searcIndex(9)?<img src={image} alt='' className='bg-black border-16 w-10 h-10 rounded-full'/>:null}</p>
                                 </div>
                             </div>
                         </div>
@@ -157,12 +157,14 @@ class App extends Component{
                             <span className='block text-black font-bold py-2 px-3  m-3 max-w-auto rounded-lg'>Ca Vous dirait de faire une autre partie !!!!!!!!!</span>
                             <h1 className='text-black font-bold py-2 px-3 border border-gray-400 border-2 m-3 max-w-auto rounded-lg'>Score: {this.state.score}</h1>
                             <button onClick={()=>this.setState({
-                                level:0,
-                                delay:0,
-                                levelTemp:0,
+                                level:1,
+                                delay:2000,
+                                levelTemp:1,
                                 score:0,
+                                time:1000,
                                 place:[],
-                                finish:false
+                                finish:false,
+                                maxScore:15
                             })} className='bg-green-500 text-white font-bold py-2 px-6 rounded'>Oui</button>
                             <button onClick={()=>this.setState({finish:true})} className='bg-red-500 text-white font-bold py-2 px-6 rounded'>Non</button>
                         </section>
